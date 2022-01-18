@@ -1,0 +1,54 @@
+h1,h2 {
+
+    font-size: 60px;
+    text-align: center;
+    font-family: Arial;
+    margin: 5px;
+
+}
+
+button {
+    display: block;
+    margin: auto;
+}
+
+.container{
+    width: 600px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.awan {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.awan::after{
+    content:'';
+    display: block;
+    width: 200px;
+    height: 100px;
+    background: url(../IMG/AWAN.png) bottom center no-repeat;
+    background-size: 85%;
+    position: absolute;
+    bottom: -25px;
+}
+.usop {
+    width: 100%;
+    height: 100%;
+    background: url(../IMG/USOP.png)bottom center no-repeat;
+    background-size: 50%;
+    position: absolute;
+    top: 100px;
+    transition: top 0.3s;
+    
+}
+.awan.muncul .usop{
+    top: -70px;
+}
+    
+
+
